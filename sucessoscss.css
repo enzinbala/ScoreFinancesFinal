@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    height: 330vh;
+    background-color: #1A1A1A;
+}
+
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    width: 100%;
+    padding: 60px 4%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    display: flex;
+    z-index: 3;
+}
+
+header.rolagem{
+    background-color: #1A1A1A;
+    padding: 20px 4%;
+    z-index: 4;
+    height: 113px;
+}
+
+header.rolagem a, header.rolagem i{
+    color: #fff;
+
+}
+
+header i{
+    font-size: 30px;
+    color: #fff;
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 32px;
+}
+
+header ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+}
+.logo img{
+    width: 200px;
+}
+
+.flex li > a:hover {
+    color: #b99581;
+}
+
+.flex li > a::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    border-radius: 200px;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(185,149,129,1) 100%);
+    transition: all 0.3s ease;
+}
+
+.flex li > a:hover::after{
+    width: 115%;
+}
+
+section {
+    margin-top: 170px;
+    width: 100%;
+    height: 790px;
+}
+
+section div.background-section {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    background-color: #1A1A1A;
+}
+
+section div.background-section video{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    object-position: center;
+}
+
+section div.box {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+}
+
+section div.box conteudo {
+    width: 80%;
+}
+
+section div.box img {
+    width: 60%;
+    min-width: 300px;
+}
+
+section div.box p{
+    margin-top: 40px;
+    color: white;
+    font-size: 24px;
+    line-height: 30px;
+    font-family: "Space Grotesk", sans-serif
+}
+
+@media screen and (max-width: 1024px){
+    section div.box {
+        width: 50%;
+        height: 100%;
+        position: relative;
+        z-index: 1;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3%;
+    }
+    
+    section div.box conteudo {
+        width: 80%;
+    }
+}
+
+
+section-harry {
+    width: 100%;
+    height: 100vh;
+}
+
+section-harry div.background-section-harry {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    background-color: #1A1A1A;
+}
+
+section-harry div.background-section-harry video{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    object-position: center;
+}
+
+section-harry div.box-harry {
+    width: 50%;
+    height: 80vh;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+}
+
+section-harry div.box-harry conteudo-harry {
+    width: 80%;
+}
+
+section-harry div.box-harry img {
+    width: 60%;
+    min-width: 300px;
+}
+
+section-harry div.box-harry p{
+    margin-top: 40px;
+    color: white;
+    font-size: 24px;
+    line-height: 30px;
+    font-family: "Space Grotesk", sans-serif
+}
+
+@media screen and (max-width: 1024px){
+    section-harry div.box-harry {
+        width: 50%;
+        height: 100%;
+        position: relative;
+        z-index: 1;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3%;
+    }
+    
+    section-harry div.box-harry conteudo-harry {
+        width: 80%;
+    }
+}
+
+section-tify {
+    width: 100%;
+    height: 100vh;
+}
+
+section-tify div.background-section-tify {
+    width: 100%;
+    height: 100%;
+    margin-top: 18px;
+    position: absolute;
+    z-index: 0;
+    background-color: #1A1A1A;
+}
+
+section-tify div.background-section-tify video{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    object-position: center;
+}
+
+section-tify div.box-tify {
+    width: 50%;
+    height: 82vh;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+}
+
+section-tify div.box-tify conteudo-tify {
+    width: 80%;
+}
+
+section-tify div.box-tify img {
+    width: 60%;
+    min-width: 300px;
+}
+
+section-tify div.box-tify p{
+    margin-top: 40px;
+    color: white;
+    font-size: 24px;
+    line-height: 30px;
+    font-family: "Space Grotesk", sans-serif
+}
+
+@media screen and (max-width: 1024px){
+    section-tify div.box-tify {
+        width: 50%;
+        height: 100%;
+        position: relative;
+        z-index: 1;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3%;
+    }
+    
+    section-tify div.box-tify conteudo-tify {
+        width: 80%;
+    }
+}
+
+
+section-nike {
+    width: 100%;
+    height: 100vh;
+}
+
+section-nike div.background-section-nike {
+    width: 100%;
+    height: 100%;
+    margin-top: 18px;
+    position: absolute;
+    z-index: 0;
+    background-color: #1A1A1A;
+}
+
+section-nike div.background-section-nike video{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    object-position: center;
+}
+
+section-nike div.box-nike {
+    width: 50%;
+    height: 82vh;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+}
+
+section-nike div.box-nike conteudo-nike {
+    width: 80%;
+}
+
+section-nike div.box-nike img {
+    width: 60%;
+    min-width: 300px;
+}
+
+section-nike div.box-nike p{
+    margin-top: 40px;
+    color: white;
+    font-size: 24px;
+    line-height: 30px;
+    font-family: "Space Grotesk", sans-serif
+}
+
+@media screen and (max-width: 1024px){
+    section-nike div.box-nike {
+        width: 50%;
+        height: 100%;
+        position: relative;
+        z-index: 1;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3%;
+    }
+    
+    section-nike div.box-nike conteudo-nike {
+        width: 80%;
+    }
+}
+
+.footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 0;
+    gap: 18px;
+    color: white;
+    height: 300px;
+  }
+  
+  .footer-icons {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .footer img {
+    width: 300px;
+  }
